@@ -215,12 +215,52 @@
             </a>
         </div>
       </footer>
+      
 
+      <!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<!-- <script>
+  // SDK ni ishga tushirish
+  emailjs.init("dZp7yoLrFxcQfitYq");
+
+  const form = document.getElementById('contact-form');
+  const sendBtn = document.getElementById('send-btn');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    sendBtn.disabled = true;
+    sendBtn.innerText = "Sending...";
+
+    emailjs.sendForm('service_7nj9d7q', 'template_6ga7h3n', this)
+      .then(() => {
+        alert("Message sent successfully!");
+        form.reset();
+        sendBtn.disabled = false;
+        sendBtn.innerText = "Send Message";
+      }, (error) => {
+        alert("Error sending message: " + JSON.stringify(error));
+        sendBtn.disabled = false;
+        sendBtn.innerText = "Send Message";
+      });
+  });
+</script> -->
+
+
+
+      
 
 
       <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
+      
       <script src="https://unpkg.com/scrollreveal"></script>
+
+      
     <script src="css-js/main.js"></script>
 </body>
 </html>
+
+
+<!-- dZp7yoLrFxcQfitYq
+service_7nj9d7q
+template_6ga7h3n -->
